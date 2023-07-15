@@ -7,7 +7,134 @@ body {
     text-rendering: optimizeLegibility !important;
     background: #f3f3f5;
 }
+body{
+    min-height: 100vh;
+    background-color: #f0ebeb;
+    overflow-x: hidden;
+}
 
+#open_cart_btn{
+    border: none;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sidecart{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width:350px;
+    background-color: #fff;
+    box-shadow: -10px 0 15px var(--light-gray);
+    transform: translateX(110%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.sidecart.open{
+    transform: translateX(0);
+}
+
+.cart_content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_header{
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_title{
+    position: relative;
+}
+
+.header_title span{
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_header .close_btn{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+}
+
+.cart_header .close_btn:hover{
+    transform: scale(1.1);
+}
+
+
+.cart_items{
+    flex: 1;
+    overflow-x: hidden;
+}
+
+.cart_item{
+    position:relative;
+    padding: 1rem;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.remove_item{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remove_item span {
+    color: #fff;
+    font-size: 20px;
+    user-select: none;
+}
+
+
+.item_img{
+    flex: 1;
+}
+
+.item_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item_details{
+    flex:2;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .body-fixed {
     position: fixed;
     width: 100%;

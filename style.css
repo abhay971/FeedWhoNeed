@@ -781,6 +781,10 @@ input{
     display: none;
 }
 
+.dish-box1 {
+   display: none;
+}
+
 .dish-box {
     border-radius: 30px;
     background: linear-gradient(145deg, #ececec, #ffffff);

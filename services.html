@@ -15,8 +15,80 @@
     <link rel="stylesheet" href="jquery.fancybox.min.css">
     <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
+     <script>
+        let cartItemCount = 0;
+
+        function addToCart() {
+            cartItemCount++;
+            document.getElementById('cartNumber').textContent = cartItemCount;
+        }
+    </script>
 </head>
-<body>
+
+<body class="body-fixed">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="logo2.png" width="160" height="36" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-right">
+                            <form action="#" class="header-search-form for-des">
+                               
+                                <select id="inputState" class="form-input" >
+                                    <option>Gujarat</option>
+                                    <option>Ahemdabad</option>
+                                    <option>Vadodara</option>
+                                    <option>Anand</option>
+                                    <option>Navsari</option>
+                                    <option>Surat</option>
+                                    <option>Valsad</option>
+                                    <option>Ankleshwar</option>
+                                    <option>Bharuch</option>
+                                    <option>Vapi</option>
+                                    <option>Daman</option>
+                                    
+                                </select>
+                                <button type="submit">
+                                    <nav class="header-menu">
+                                    <ul class="menu food-nav-menu">
+                                    <li><a href="services.html"><i class="uil uil-search"></i></a></li>
+                                </ul>
+                            </nav>
+                                </button>
+                            </form>
+                             <a href="javascript:void(0)" class="header-btn header-cart">
+                                <i class="uil uil-shopping-bag"></i>
+                                <span class="cart-number" id="cartNumber">0</span>
+                            </a>
+                            <a href="javascript:void(0)" class="header-btn">
+                                <i class="uil uil-user-md"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
 
   <section style="background-image: url(menu-bg.png);"
 class="our-menu section bg-light repeat-img" id="menu">

@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="jquery.fancybox.min.css">
     <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
+     <script>
+        let cartItemCount = 0;
+
+        function addToCart() {
+            cartItemCount++;
+            document.getElementById('cartNumber').textContent = cartItemCount;
+        }
+    </script>
 </head>
 
 <body class="body-fixed">
@@ -69,9 +77,9 @@
                             </nav>
                                 </button>
                             </form>
-                            <a href="javascript:void(0)" class="header-btn header-cart">
+                             <a href="javascript:void(0)" class="header-btn header-cart">
                                 <i class="uil uil-shopping-bag"></i>
-                                <span class="quantity">0</span>
+                                <span class="cart-number" id="cartNumber">0</span>
                             </a>
                             <a href="javascript:void(0)" class="header-btn">
                                 <i class="uil uil-user-md"></i>
@@ -261,7 +269,7 @@
                                                     <b>Add To Cart</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                    <button class="dish-add-btn" onclick="addToCart()">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
                                                 </li>
@@ -302,7 +310,7 @@
                                                     <b>Add To Cart</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                   <button class="dish-add-btn" onclick="addToCart()">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
                                                 </li>
@@ -342,7 +350,7 @@
                                                     <b>Add To Cart</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                    <button class="dish-add-btn" onclick="addToCart()">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
                                                 </li>
@@ -383,7 +391,7 @@
                                                     <b>Add To Cart</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                    <button class="dish-add-btn" onclick="addToCart()">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
                                                 </li>
@@ -421,7 +429,7 @@
                                                     <b>Add To Cart</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                    <button class="dish-add-btn" onclick="addToCart()">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
                                                 </li>
@@ -458,7 +466,7 @@
                                                     <b>Add To Cart</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                   <button class="dish-add-btn" onclick="addToCart()">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
                                                 </li>

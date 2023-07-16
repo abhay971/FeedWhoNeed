@@ -14,74 +14,73 @@
  
      <!-- fancy box  -->
      <link rel="stylesheet" href="jquery.fancybox.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style1.css">
     <title>Form-FeedWhoNeed</title>
 </head>
 <body>
-    <section style="background-image: url(menu-bg.png);"class="wrapper"</div></section>
+    <section style="background-image: url(menu-bg.png);"
+ <div class="wrapper">
 
 
---------------------------- Form box ---------------------------------    
+<!----------------------------- Form box ----------------------------------->    
     <div class="form-box">
         
-        ----------------- login form ------------------------
-        <form action="Detail.php" method="post">
+        <!------------------- login form -------------------------->
+
         <div class="login-container" id="login">
             <div class="top">
                 <span><a href="#" onclick="register()"></a></span>
                 <header>Details</header>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" id="Full_Name" placeholder="Full Name">
+                <input type="text" class="input-field" placeholder="Full Name">
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" id="Email" placeholder="Email">
+                <input type="text" class="input-field" placeholder="Email">
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" id="Contact_Number" placeholder="Contact Number">
+                <input type="text" class="input-field" placeholder="Contact Number">
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" id="Address" placeholder="Address">
+                <input type="text" class="input-field" placeholder="Address">
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" class="input-field" id="Description" placeholder="Description">
+                <input type="passwo" class="input-field" placeholder="Description">
                 <i class="bx bx-lock-alt"></i>
             </div>
             <div class="input-box">
-                <input type="submit" class="submit" id="SUBMIT" value="SUBMIT">
+                <input type="submit" class="submit" <a href="index.html">SUBMIT</a> >
             </div>
             
         </div>
-    </form>
 
-        ----------------- registration form ------------------------
-        <form action="Detail.php" method="post">
+        <!------------------- registration form -------------------------->
         <div class="register-container" id="register">
             <div class="top">
-                <span>Have an account? <a href="#"  onclick="login()">Login</a></span>
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
                 <header>Sign Up</header>
             </div>
             <div class="two-forms">
                 <div class="input-box">
-                    <input type="text" class="input-field" id="Firstname" placeholder="Firstname">
+                    <input type="text" class="input-field" placeholder="Firstname">
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="Lastname" placeholder="Lastname">
+                    <input type="text" class="input-field" placeholder="Lastname">
                     <i class="bx bx-user"></i>
                 </div>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" id="Email" placeholder="Email">
+                <input type="text" class="input-field" placeholder="Email">
                 <i class="bx bx-envelope"></i>
             </div>
             <div class="input-box">
-                <input type="password" class="input-field" id="Password" placeholder="Password">
+                <input type="password" class="input-field" placeholder="Password">
                 <i class="bx bx-lock-alt"></i>
             </div>
             <div class="input-box">
@@ -97,10 +96,8 @@
                 </div>
             </div>
         </div>
-    </form>
     </div>
 </div>   
-
 
 
 <script>
@@ -113,7 +110,7 @@
     } else {
         i.className = "nav-menu";
     }
-}
+   }
  
 </script>
 

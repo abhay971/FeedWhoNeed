@@ -166,7 +166,9 @@
                         
                     </div>
                 </div>
-                <div class="cart_actions"></div>
+                <div class="cart_actions">
+                    <button onclick="redirectToPage()">order</button>
+                </div>
             </div>
         </div>
     </header>
@@ -582,5 +584,10 @@ class="our-menu section bg-light repeat-img" id="menu">
   <script src="smooth-scroll.js"></script>
   <!-- custom js  -->
   <script src="main.js"></script>
+    <script>
+        function redirectToPage() {
+           // Replace "destination.html" with the URL of the page you want to redirect to
+           window.location.href = "form.html";}
+   </script>
 </body>
 </html>
